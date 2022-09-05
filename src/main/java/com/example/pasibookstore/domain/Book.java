@@ -1,10 +1,11 @@
-package model;
+package com.example.pasibookstore.domain;
 
 public class Book {
+	
 	private String title;
 	private String author;
 	private int year;
-	private String isbd;
+	private String isbn;
 	private double price;
 
 }
