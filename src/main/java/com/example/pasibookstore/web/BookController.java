@@ -39,6 +39,11 @@ public class BookController {
 		repository.deleteById(id);
 		return "redirect:../booklist";
 	}
-
-
+	
+	@GetMapping("/editbook/{id}")
+	public String edit(@PathVariable("id") long id, Model model){
+		model.addAttribute("book", repository.findById(id));
+		return "editbook";
+	}
+	
 }
