@@ -24,7 +24,7 @@ public class PasibookstoreApplication {
 			crepository.save(new Category("Fantasy"));
 			crepository.save(new Category("Science Fiction"));			
 			 
-			repository.save( new Book(" East of Eden", "john Steinbeck", 1952, "12323232-11", 25.90, crepository.findByName("Fantasy").get(0)));
+			repository.save( new Book(" East of Eden", "John Steinbeck", 1952, "12323232-11", 25.90, crepository.findByName("Fantasy").get(0)));
 			repository.save(new Book("Number the Stars", "Lois Lowry", 1989, "236598-26", 32.90, crepository.findByName("Horror").get(0)));
 		};
 	}
